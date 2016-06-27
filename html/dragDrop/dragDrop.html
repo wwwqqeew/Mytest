@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="dragDrop.js"></script>
+<script type="text/javascript">
+// test 
+   $(function(){
+		//限定区域，有回调函数。
+		/* $('#dragDiv').dragDrop({fixarea:[0,$('#dragContainer').width()-50,0,$('#dragContainer').height()-50],callback:function(params){
+				$('#span1').text('X:'+params.moveX+' Y:'+params.moveY);
+		}}); */
+		//默认设置
+		$('#dragDiv1').dragDrop();
+   });
+</script>
+</head>
+<body>
+	<div id="dragContainer" style="position:relative;left:10px;top:10px;border:1px dashed blue;width:500px;height:500px;">
+
+      <div id="dragDiv" style="background-color:blue;height:50px;width:50px;">
+	  </div>
+      <div id="dragDiv1" style="border:1px solid red;height:50px;width:50px;">
+	  </div>
+
+	</div>
+
+	  <span id="span1"></span>
+</body>
+
+</html>
