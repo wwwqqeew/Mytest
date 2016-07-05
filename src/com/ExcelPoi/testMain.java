@@ -11,7 +11,7 @@ public class testMain {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		List<List<String>> list = testPoiU("d:\\新文件名.xls");
+		List<List<String>> list = testPoiU("E:\\公司资料\\珠海斗门\\嘉龙\\斗门数据2016年6月29日\\珠海斗门属性信息0701.xlsx",0);
 		System.out.println("数据条数："+list.size());
 		for (int i = 0; i < list.size(); i++) {
 			System.out.print(i +" ");
@@ -38,9 +38,9 @@ public class testMain {
 	 * @param s InputStream
 	 * @return List<List<String>>
 	 */
-	public static List<List<String>> testPoiU(String fileName) {
+	public static List<List<String>> testPoiU(String fileName,int sheetInt) {
 		ReadExcel poi = new ReadExcel();
-		List<List<String>> list = poi.read(fileName);
+		List<List<String>> list = poi.read(fileName,1);
 		return list;
 	}
 }

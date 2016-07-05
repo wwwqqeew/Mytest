@@ -2,8 +2,12 @@ package com;
 
 import java.util.Date;
 
+import com.util.o;
+
 public class sdsf {
 	public static void main(String[] args) {
-		System.out.println(new Date(1408443072000L));
+		int a = 'a';
+		int b = 'A';
+		o.o(a,b,a-b);
 	}
 }
