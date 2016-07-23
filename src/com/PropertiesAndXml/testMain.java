@@ -32,7 +32,7 @@ public class testMain {
 		 Properties prop = new Properties();
 		 FileInputStream   pInStream = new FileInputStream(pFile );
 		prop.load(pInStream);
-		o.o(prop.getProperty("mapRoot"),prop.getProperty("leaveDistance"));
+		o.o(prop.getProperty("mapRoot"),prop.getProperty("leaveDistance"),Long.parseLong(prop.getProperty("leav")));
 	}
 
 }

@@ -5,25 +5,28 @@ import java.io.InputStream;
 import java.util.List;
 
 import com.ExcelPoi.ReadExcel;
+import com.util.o;
 
 public class testMain {
 
 	/**
 	 * @param args
+	 * @throws Exception 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		List<List<String>> list = testPoiU("E:\\公司资料\\珠海斗门\\嘉龙\\斗门数据2016年6月29日\\珠海斗门属性信息0701.xlsx",3);
+		List<List<String>> list = testPoiU("d:\\111.xlsx",1);
+//		List<List<String>> list = testPoiU("E:\\公司资料\\珠海斗门\\嘉龙\\斗门数据2016年6月29日\\珠海斗门属性信息0701.xlsx",7);
 		StringBuilder str = new StringBuilder();
 		CreatSql creatSql = new CreatSql();
 		System.out.println("数据条数："+list.size());
-		for (int i = 0; i < list.size(); i++) {
+		for (int i = 0; i ==0; i++) {
 			System.out.print(i +" ");
 			for (int j = 0; j < list.get(i).size(); j++) {
-				System.out.print("["+j+"]" + list.get(i).get(j)+"  "+list.get(i).get(j).indexOf(" "));
+				o.o(j, list.get(i).get(j), list.get(i).get(j).indexOf(" "),"".equals(list.get(i).get(j)));
 				if (i == 0) {
-					str.append(creatSql.creatPropertySql(list.get(i).get(j), list.get(i+1).get(j), list.get(i+2).get(j)));
+					str.append(creatSql.creatPropertySql(list.get(i).get(j), "", list.get(i).get(j)));
 				}
 			}
 //			str.append(creatSql.creatPropertySql(list.get(i).get(0), list.get(i).get(1), ""));//园区属性
@@ -33,7 +36,8 @@ public class testMain {
 //		System.out.println(creatSql.creatTableSql("tourism", str.toString() , "旅游"));
 //		System.out.println(creatSql.creatTableSql("government", str.toString() , "政府"));
 //		System.out.println(creatSql.creatTableSql("enterprise", str.toString() , "企业"));
-		System.out.println(creatSql.creatTableSql("individual", str.toString() , "个体"));
+//		System.out.println(creatSql.creatTableSql("individual", str.toString() , "个体"));
+		System.out.println(creatSql.creatTableSql("basepoi", str.toString() , "基础poi"));
 	}
 
 	/**

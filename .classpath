@@ -28,10 +28,10 @@
 	<classpathentry kind="lib" path="D:/个人/jar/mina/slf4j-api-2.0.99.jar"/>
 	<classpathentry kind="lib" path="D:/个人/jar/mina/slf4j-jdk14-1.7.17.jar"/>
 	<classpathentry kind="lib" path="lib/voice/commons-codec-1.7.jar"/>
-	<classpathentry kind="lib" path="lib/voice/httpcore-4.2.1.jar"/>
-	<classpathentry kind="lib" path="lib/voice/httpclient-4.2.1.jar"/>
-	<classpathentry kind="lib" path="lib/voice/httpclient-4.5.1.jar"/>
 	<classpathentry kind="lib" path="lib/voice/json-20080701.jar"/>
 	<classpathentry kind="lib" path="lib/netty/netty-all-5.0.0.Alpha1.jar"/>
+	<classpathentry kind="lib" path="lib/voice/httpclient-4.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/voice/httpcore-4.4.jar"/>
+	<classpathentry kind="lib" path="lib/64bit/rt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
