@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="html_all" deleted="false" description="" enabled="true" name="dv">&lt;div class = "${div}-div"&gt;&#13;
+	&lt;div class = "${div}-layout"&gt;&#13;
+	&lt;/div&gt;&#13;
+&lt;/div&gt;</template></templates>

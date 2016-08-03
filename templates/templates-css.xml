@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="css_all" deleted="false" description="" enabled="true" name="dv">.${name}-div {&#13;
+  bottom: 0;&#13;
+  left: 0;&#13;
+  right: 0;&#13;
+  top: 0;&#13;
+  position: absolute;&#13;
+  height: 157px;&#13;
+}&#13;
+.${name}-layout {&#13;
+  background-color: white;&#13;
+  width: 100%;&#13;
+  height: 100%;&#13;
+  position: relative;&#13;
+}</template></templates>
