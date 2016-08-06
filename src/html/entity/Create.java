@@ -108,6 +108,7 @@ public class Create {
 			 hs.put(getName(), 0);
 		}
 		 sb.append("\n"+addAll+"<div class='"+newName+"-div'>");
+		 sb.append("\n"+addAll+"<div class='"+newName+"-layout'>");
 		 for (int i = 0; i < getList().size(); i++) {
 			 sb.append(getList().get(i).toHtml(newName,hs));
 		}
@@ -115,6 +116,7 @@ public class Create {
 		 if (getList().size() == 0) {
 			 addAll = "";
 		}
+		 sb.append(addAll+"</div>\n");
 		 sb.append(addAll+"</div>\n");
 		return sb.toString();
 	}

@@ -11,11 +11,17 @@ public class testData {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(new Date(1456127831255L));
-		System.out.println(new Date(1456061242121L));
-//		System.out.println(new Date().getTime());
-//		o.o(DateUtil.getDateString(new Date()));
-//		o.o(new Date());
+		System.out.println(DateUtil.getDateString(1470279635958L));
+		System.out.println(DateUtil.getDateString(1470303608303L));
+		
+		System.out.println(DateUtil.getDateString(1470279635958L));
+		System.out.println(DateUtil.getDateString(1470303608303L));
+		
+		System.out.println(DateUtil.getDateString(1470354552520L));
+		System.out.println(DateUtil.getDateString(1470378483260L));
+//		System.out.println(DateUtil.getDateString().getTime());
+//		o.o(DateUtil.getDateString(DateUtil.getDateString()));
+//		o.o(DateUtil.getDateString());
 	}
 
 }

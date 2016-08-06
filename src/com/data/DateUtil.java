@@ -60,4 +60,19 @@ public class DateUtil {
 			return sdf.format(data);
 		}
 	}
+	
+	/**
+	 * Date ת"yyyy-MM-dd HH:mm:ss"���͵�String
+	 * @param data
+	 * @return
+	 */
+	public static String getDateString(Long data){
+		SimpleDateFormat sdf = null;
+		sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+		if (data == null) {
+			return sdf.format(new Date(data));
+		} else {
+			return sdf.format(data);
+		}
+	}
 }

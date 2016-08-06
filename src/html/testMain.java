@@ -14,7 +14,7 @@ public class testMain {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String order = "1223";
+		String order = "122344344";
 		Create create = new Create();
 		List <Create> list = new ArrayList<Create>();
 		String [] orders = order.split("");
@@ -45,7 +45,7 @@ public class testMain {
 			}
 		}
 		
-//		o.o(list.get(0).toHtml("",null));
+		o.o(list.get(0).toHtml("",null));
 		o.o(list.get(0).toCss("",null));
 	}
 	
